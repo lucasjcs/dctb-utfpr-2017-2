@@ -7,8 +7,9 @@
  */
 
 require_once "Confronto.php";
+require_once "model/CriaCriatura.php";
 
-$criatura1= new Monstro("Lucao", "Negro", 8, 100, 100, 50, 90, 90, 100,100);
-$criatura2 = new Heroi("Fabricio", "Indiano", 7, 100, 100, 100, 90, 90, 100,100, 10);
+$criatura1 = criar('Matilda');
+$criatura2 = criar('Dark Glorysson');
 
 Confronto::guerra($criatura1, $criatura2);

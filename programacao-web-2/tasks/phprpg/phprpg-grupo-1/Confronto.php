@@ -12,9 +12,6 @@ require_once "model/Monstro.php";
 
 class Confronto{
     public static function guerra($monstro, $heroi){
-
-        $monstro = new Monstro("Lucao", "Negro", 8, 100, 100, 50, 90, 90, 100,100);
-        $heroi = new Heroi("Fabricio", "Indiano", 18, 100, 100, 100, 90, 90, 100,100, 10);
         $flag = 1;
 
         while ($heroi->vivo() && $monstro->vivo()){
